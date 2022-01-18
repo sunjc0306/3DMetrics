@@ -1,4 +1,1 @@
-# 3DMetrics
-# 3DMetrics
-# 3DMetrics
-# sematicVoxel
+该库用于三维人体模型的指标计算。
