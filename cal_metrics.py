@@ -7,11 +7,12 @@ import utils.ObjIO as ObjIO
 from MyCamera import ProjectPointsOrthogonal
 from MyRenderer import ColoredRenderer
 import cv2 as cv
-# import DataUtil.CommonUtil as util
 import torch
 import sys
 
-from opendr.lighting import VertNormals
+# from opendr.lighting import VertNormals
+
+from utils.cam_util import compute_normal
 from chamfer_distance import ChamferDistance
 
 constBackground = 4294967295
@@ -22,7 +23,7 @@ dim_w=512
 def render_front_normals( mesh, rn):
     # init.
     rn.set(f=mesh['f'], bgcolor=np.zeros(3))
-    mesh['vn'] = VertNormals(f=mesh['f'], v=mesh['v']).r
+    mesh['vn'] = compute_normal(faces=mesh['f'], vertices=mesh['v'])
 
     # front
     ptsToRender = mesh["v"]
