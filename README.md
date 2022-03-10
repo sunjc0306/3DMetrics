@@ -27,6 +27,9 @@ python cal_metrics.py
 ```
 
 
+## Acknowledgement
+Note that the calculating code of this repository is heavily based on [Geo-PIFu](https://github.com/simpleig/Geo-PIFu). We thank the authors for their great job!
+
 ## Contact 
 If you have some trouble using this software, please contact me[Jianchi Sun: [sunjc0306@mails.ccnu.edu.cn](mailto:sunjc0306@mails.ccnu.edu.cn) or [sunjc0306@qq.com](mailto:sunjc0306@qq.com).]
 
